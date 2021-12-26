@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <script type="text/javascript">
+    function messageOnSubmit()
+    {
+      var firstName = document.getElementsByName("firstname")[0].value;
+      if (firstName.length < 1)
+      {
+        alert("Enter First Name. You Silly Fool !!");
+        return false;
+      }
+
+    var lastName = document.getElementsByName("lastname")[0].value;
+      if (lastName.length < 1)
+      {
+        alert("Enter Last Name. You Silly Fool !!");
+        return false;
+      }
+
+      var fullName = firstName + " " + lastName;
+      alert("Hello " + fullName + ". Thanks for filling in the form.");
+    }
+  </script>
+  <body>
+    <h1> My Contact Details </h1>
+    <p> 69 Funny Road, Bunville</p>
+    <p> 69693458739</p>
+    <p> mylegendaryturbo@gmail.com</p>
+    <hr>
+  <form  action="mailto:ajaykumar.suri@gmail.com" method="post" enctype="text/plain">
+  <h3><strong> Send us your message</strong></h3>
+  <label> Your Name: </label>
+  <input type="text" name="name" value="" >
+  <br><br>
+  <label> Your Email:</label>
+  <input type="email" name="" value="">
+  <br><br>
+  <label>Your Message:</label>
+  <br>
+  <textarea name="name" rows="15" cols="40"></textarea>
+  <br><br>
+  <input type="submit" name="" value="Submit">
+
+  </form>
+  </body>
+</html>
